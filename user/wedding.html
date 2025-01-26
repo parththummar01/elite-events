@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Events</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .bg-image {
+      background-image: url('img/wedding2.jpg');
+      /* Replace with your actual image URL */
+      background-size: cover;
+      /* Ensure the image covers the whole section */
+      background-position: center;
+      /* Center the image */
+      background-repeat: no-repeat;
+      /* Prevent image repetition */
+      position: relative;
+      padding: 100px 0;
+      height: 400px;
+      /* Adjust padding to control section height */
+    }
+
+    .bg-image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      /* Dark overlay for better text readability */
+      z-index: 1;
+    }
+
+    .bg-image .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .fw-bold {
+      color: #ff851f;
+    }
+
+    .card {
+      overflow: hidden;
+    }
+
+    .card-title {
+      color: #ff851f;
+    }
+
+    .check {
+
+      position: absolute;
+      right: 9px;
+      bottom: 9px;
+      height: 21px;
+      width: 21px;
+    }
+
+    .card img:hover {
+      scale: 1.1;
+      transition: ease-in 0.5s;
+    }
+
+    .card input[type="checkbox"]:checked {
+      border: 2px solid #ff851f;
+      background-color: #ff851f;
+      /* Change color when checked */
+
+    }
+
+    .btn-gradient {
+      background-color: #ff851f;
+      color: #fff;
+      border: none;
+    }
+    .btn-gradient:hover{
+      border: 2px solid #ff851f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid " style="padding: 0px 70px ;">
+      <a class="navbar-brand" href="#"><img
+          src="img/a-black-typography-logo-for-a-company-named-elite--p4iqj56WQlmp3MaKOiAn3g-qc_GyOyBSUOx-juc6ty7pw-Photoroom copy.jpg"
+          alt="" height="50px" width="150px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0  d-flex justify-content-end w-100">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonial.html">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallary</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="wedding.html">Wedding</a></li>
+              <li><a class="dropdown-item" href="#">Birthday</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Party</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reachus.html">Reach us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-image py-5 text-center">
+    <div class="container">
+      <h1 class="display-4 text-white">Your Dream Wedding Awaits</h1>
+      <p class="lead text-white">We create unforgettable wedding experiences tailored just for you.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="container my-5">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Our Wedding Services</h2>
+      <p>Explore the services we provide to make your wedding day special.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/i15.jpg" class="card-img-top" alt="Venue Decoration">
+          <div class="card-body">
+            <h5 class="card-title">Venue Decoration</h5>
+            <p class="card-text">Elegant and personalized decor that matches your theme and style.</p>
+
+            <input type="checkbox" class="check">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/catering.jpg" class="card-img-top" alt="Catering Services">
+          <div class="card-body">
+            <h5 class="card-title"> Catering Services </h5>
+            <p class="card-text">
+
+              "Delight your guests with our exceptional catering services, tailored to make every event unforgettable."
+            </p>
+            <input type="checkbox" class="check">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/photo.jpg" class="card-img-top" alt="Photography & Videography">
+          <div class="card-body">
+            <h5 class="card-title">Photography & Videography</h5>
+            <p class="card-text">Capture every beautiful moment with our professional photographers.</p>
+            <input type="checkbox" class="check">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/mehndi.jpg" class="card-img-top" alt="Venue Decoration">
+          <div class="card-body">
+            <h5 class="card-title">Mehndi </h5>
+            <p class="card-text">"Adorn your celebrations with our exquisite mehndi artistry, crafted to perfection."
+            </p>
+            <input type="checkbox" class="check">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/bus.jpg" class="card-img-top" alt="Catering Services">
+          <div class="card-body">
+            <h5 class="card-title">Tours and travels</h5>
+            <p class="card-text">"Explore the world with our seamless tours and travel services, designed for
+              unforgettable journeys."</p>
+            <input type="checkbox" class="check">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/speakers.jpg" class="card-img-top" alt="Photography & Videography">
+          <div class="card-body">
+            <h5 class="card-title">Dj Speakers</h5>
+            <p class="card-text">"Turn up the energy with our DJ and speaker services for electrifying events."</p>
+            <input type="checkbox" class="check">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div style="  display: flex;
+    justify-content: center;
+    align-items: center;">
+    <button type="submit" class="btn btn-gradient mb-5">Book Now</button>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container text-center text-md-start">
+      <div class="row">
+
+        <!-- About Section -->
+        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold mb-4">Elite Events</h5>
+          <p>
+            We specialize in creating unforgettable experiences. From weddings to corporate events, we handle it all
+            with excellence and creativity.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="footer" href="#" class="text-light text-decoration-none">About</a></li>
+            <li><a class="footer" href="#" class="text-light text-decoration-none">Services</a></li>
+            <li><a class="footer" href="#" class="text-light text-decoration-none">Contact</a></li>
+            <li><a class="footer" href="#" class="text-light text-decoration-none">Home</a></li>
+            <li><a class="footer" href="#" class="text-light text-decoration-none">Gallary</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold mb-4">Contact</h5>
+          <p><i class="fas fa-home me-2"></i> 123 Event Lane, City, Country</p>
+          <p><i class="fas fa-envelope me-2"></i> info@eliteevents.com</p>
+          <p><i class="fas fa-phone me-2"></i> +123 456 7890</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold mb-4">Follow Us</h5>
+          <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="https://www.instagram.com/cinecraft_videography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Elite Events. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

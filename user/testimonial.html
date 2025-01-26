@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet"> -->
+
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f9;
+      margin: 0;
+
+    }
+
+    .bg {
+      background-image: url('img/about2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 550px;
+      position: relative;
+      filter: blur(2px);
+      z-index: 1;
+      filter: brightness(65%);
+    }
+
+    h1 {
+      color: rgb(255, 255, 255);
+      font-size: 70px;
+      text-align: center;
+      font-family: "Sour Gummy", sans-serif;
+      padding-top: 90px;
+      left: 25%;
+      z-index: 2;
+      position: absolute;
+      top: 50px;
+    }
+
+    h2 {
+      color: black;
+      font-size: 70px;
+      text-align: center;
+      font-family: "Sour Gummy", sans-serif;
+      padding-top: 90px;
+    }
+
+    .em {
+      /* color: rgb(0, 255, 255);
+     */
+      color: #ff851f;
+      /* -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke-color: aliceblue; */
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .review-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+    }
+
+    .review-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .review-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .review-card h3 {
+      font-size: 1.2rem;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .review-card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 10px 0;
+    }
+
+    .review-card .rating {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+    }
+
+    .review-card .rating span {
+      font-size: 1.2rem;
+      color: #ffc107;
+    }
+
+    .review-card .event {
+      margin-top: 15px;
+      padding: 10px;
+      background: #f9f9fb;
+      border-radius: 8px;
+    }
+
+    .review-card .event h4 {
+      margin: 0;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .review-card .event span {
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container-fluid " style="padding: 0px 70px ;">
+      <a class="navbar-brand" href="#"><img
+          src="img/a-black-typography-logo-for-a-company-named-elite--p4iqj56WQlmp3MaKOiAn3g-qc_GyOyBSUOx-juc6ty7pw-Photoroom copy.jpg"
+          alt="" height="50px" width="150px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0  d-flex justify-content-end w-100">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonial.html">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallary</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="wedding.html">Wedding</a></li>
+              <li><a class="dropdown-item" href="#">Birthday</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Party</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reachus.html">Reach us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="bg">
+
+  </div>
+  <h1>Create <span class="em"><b>Unforgettable</b></span> <br>Moments</h1><br><br><br>
+
+
+  <div class="review container">
+    <h2 class="review">Testiomonials</h2><br>
+    <div class="review-container">
+      <div class="review-card">
+        <img src="img/p1 (1).jpg" alt="Reviewer">
+        <h3>Jane Doe</h3>
+        <p>"The event was flawless! The team was professional and made our day unforgettable. Highly recommend
+          their services!"</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+        <div class="event">
+          <h4>Wedding Ceremony</h4>
+          <span>April 15, 2024</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <img src="img/p2.jpg" alt="Reviewer">
+        <h3>John Smith</h3>
+        <p>"Amazing experience! The decorations and management exceeded our expectations. Will book again!"</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+        <div class="event">
+          <h4>Corporate Event</h4>
+          <span>May 10, 2024</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <img src="img/p3.jpg" alt="Reviewer">
+        <h3>Emily Johnson</h3>
+        <p>"Fantastic service and attention to detail. My daughter's birthday party was a huge success!"</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+        <div class="event">
+          <h4>Birthday Party</h4>
+          <span>June 5, 2024</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <img src="img/p3.jpg" alt="Reviewer">
+        <h3>Michael Brown</h3>
+        <p>"The team made everything so easy for us. Our product launch event was spectacular!"</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+        <div class="event">
+          <h4>Product Launch</h4>
+          <span>July 20, 2024</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <img src="img/p4.jpg" alt="Reviewer">
+        <h3>Sarah Williams</h3>
+        <p>"We couldn’t have asked for better planning and execution for our annual gala. Thank you!"</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+        <div class="event">
+          <h4>Annual Gala</h4>
+          <span>August 15, 2024</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <img src="img/p2.jpg" alt="Reviewer">
+        <h3>David Lee</h3>
+        <p>"Exceptional service and great communication throughout the planning process. Highly recommend!"</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+        <div class="event">
+          <h4>Conference</h4>
+          <span>September 10, 2024</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container text-center text-md-start">
+      <div class="row">
+
+        <!-- About Section -->
+        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold mb-4">Elite Events</h5>
+          <p>
+            We specialize in creating unforgettable experiences. From weddings to corporate events, we handle it all
+            with excellence and creativity.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="footer" href="#" class="text-light text-decoration-none">About</a></li>
+            <li><a class="footer" href="#" class="text-light text-decoration-none">Services</a></li>
+            <li><a class="footer" href="#" class="text-light text-decoration-none">Contact</a></li>
+            <li><a class="footer" href="#" class="text-light text-decoration-none">Home</a></li>
+            <li><a class="footer" href="#" class="text-light text-decoration-none">Gallary</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold mb-4">Contact</h5>
+          <p><i class="fas fa-home me-2"></i> 123 Event Lane, City, Country</p>
+          <p><i class="fas fa-envelope me-2"></i> info@eliteevents.com</p>
+          <p><i class="fas fa-phone me-2"></i> +123 456 7890</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold mb-4">Follow Us</h5>
+          <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="https://www.instagram.com/cinecraft_videography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Elite Events. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

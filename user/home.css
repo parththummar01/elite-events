@@ -1,0 +1,100 @@
+.bg {
+    background-image: url('img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 600px;
+    position: relative;
+  }
+  
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    text-align: center;
+    font-family: "Sour Gummy", sans-serif;
+    padding-top: 90px;
+  }
+  
+  .em {
+    /* color: rgb(0, 255, 255);
+     */
+     color:#ff851f;
+    /* -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke-color: aliceblue; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #ffffff;
+    background-color: #ff851f;
+  }
+  
+  .about:hover {
+    background-color: white;
+    color: #ff851f;
+  }
+  
+  .card {
+    position: relative;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.692);
+    padding: 0%;
+  }
+  
+  .card-title{
+    color:rgb(246, 78, 6);
+  }
+  
+  .book {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    display: none;
+    z-index: 2;
+    
+  }
+  .btn{
+    background-color: #ff851f;
+  }
+  .card:hover .book {
+    display: block;
+  
+  }
+  
+  .card:hover .card-img-top {
+    filter: brightness(75%);
+    z-index: 1;
+  }
+  
+  .title2 {
+    color: rgb(246, 78, 6);
+    text-align: center;
+    /* font-size: 30px; */
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 5%;
+          z-index: 5;
+      }
+      .carousel-control-prev {
+          left: -5%;
+      }
+      .carousel-control-next {
+          right: -5%;
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 50%;
+      }
+  
+      .sr{
+         background: linear-gradient(rgb(246, 249, 250), rgb(246, 78, 6));
+         padding: 5% 10%;
+      }
